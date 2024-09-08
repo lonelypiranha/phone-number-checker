@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+{% endblock %}
+
+
+{% block body %}
+<div id="all">
+    <h1 id="top"> Phone Number Checker </h1>
+    <form action="/" method="POST">
+        <input type="tel" id="telephone" placeholder="Enter phone number in format +(country code)(remaining digits) "
+            name="tel-no">
+        <br>
+        <div class="note">Format requirement: Please enter your phone number in format <b>+(country code)(remaining
+                digits)</b> without any spaces or special characters, except the "+" sign at the beginning</div>
+        <br>
+        <br>
+        <div class="checkbox-wrapper-2">
+            <label for="check-1" class="checkbox-label">Check for phone number validity</label>
+            <input type="checkbox" class="ikxBAC" id="check-1" name="validity">
+            <br>
+            <br>
+            <label for="check-2" class="checkbox-label">Check for possible countries of origin</label>
+            <input type="checkbox" class="ikxBAC" id="check-2" name="country">
+            <br>
+            <br>
+            <br>
+            <input type="submit" id="submit-button" onclick="make_no()">
+            <input type="reset" id="reset-button">
+        </div>
+
+
+
+    </form>
+</div>
+<div class="results">
+    <p> {{validity_html}} {{country_htmlx}} <br> <br> {{country_html}} </p>
+</div>
+
+
+
+{% endblock %}

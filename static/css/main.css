@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    text-align: center;
+    background-image: url("earth-too.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(5, 5, 5, 0.6);
+    background-blend-mode: darken;
+}
+
+#top {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 1000;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-part {
+    text-align: center;
+}
+
+#telephone {
+    width: 750px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: black;
+    padding-left: 15px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+
+}
+
+.checkbox-label {
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-right: 2%;
+
+
+}
+
+#all {
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 50vw;
+    transform: translate(-50%, -90%);
+    display: block;
+    
+}
+
+.checkbox-wrapper-2 .ikxBAC {
+    appearance: none;
+    background-color: #dfe1e4;
+    border-radius: 72px;
+    border-style: none;
+    flex-shrink: 0;
+    height: 20px;
+    margin: 0;
+    position: relative;
+    width: 30px;
+    transform: translateY(4px);
+}
+
+.checkbox-wrapper-2 .ikxBAC::before {
+    bottom: -6px;
+    content: "";
+    left: -6px;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+}
+
+.checkbox-wrapper-2 .ikxBAC,
+.checkbox-wrapper-2 .ikxBAC::after {
+    transition: all 100ms ease-out;
+}
+
+.checkbox-wrapper-2 .ikxBAC::after {
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 14px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 14px;
+}
+
+.checkbox-wrapper-2 input[type=checkbox] {
+    cursor: default;
+}
+
+.checkbox-wrapper-2 .ikxBAC:hover {
+    background-color: #c9cbcd;
+    transition-duration: 0s;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked {
+    background-color: #6e79d6;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked::after {
+    background-color: #fff;
+    left: 13px;
+}
+
+.checkbox-wrapper-2 :focus:not(.focus-visible) {
+    outline: 0;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked:hover {
+    background-color: #535db3;
+}
+
+#submit-button {
+    background-color: #c9cbcd;
+    border-style: none;
+    border-radius: 72px;
+    width: 100px;
+    height: 35px;
+    margin-right: 5%;
+    font-size: large;
+    font-weight: 350;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 5px;
+    transition: 100ms ease-in;
+}
+
+#submit-button:hover {
+    background-color: #535db3;
+    color: #c9cbcd;
+    transition: 100ms ease-in;
+    scale: 1.2;
+    box-shadow: 2px 2px 3px #000000;
+}
+
+#reset-button {
+    background-color: #c9cbcd;
+    border-style: none;
+    border-radius: 72px;
+    width: 100px;
+    height: 35px;
+    font-size:large;
+    font-weight: 350;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 5px;
+    transition: 100ms ease-in;
+}
+
+#reset-button:hover {
+    background-color:#535db3;
+    color: #c9cbcd;
+    transition: 100ms ease-in;
+    scale: 1.2;
+    box-shadow: 2px 2px 3px  #000000;
+}
+
+.alert {
+    padding: 20px;
+    margin: 5px;
+    color: #970020;
+    background-color: #ffd5de;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    height: 20px;
+}
+
+.results p{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    transform: translateY(480px);
+    font-weight: 350;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.note {
+    color: #8e8e8e;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    margin-top: 1%;
+}
